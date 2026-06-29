@@ -1,6 +1,6 @@
-# Neglected Tropical Diseases (NTD) Installation Guide { #ntd-agg-installation }
+# Neglected Tropical Diseases - LMIS (NTD-LMIS) Installation Guide { #ntd-lmis-installation }
 
-This document includes an installation guide for the Neglected Tropical Diseases package.
+This document includes an installation guide for the Neglected Tropical Diseases LMIS package.
 
 System default language: English
 
@@ -10,8 +10,8 @@ The metadata reference and metadata json files provide technical details on pack
 
 The metadata package consists of the following modules:
 
-- Neglected Tropical Diseases
-- Neglected Tropical Diseases (dashboard)
+- Neglected Tropical Diseases - LMIS
+- Neglected Tropical Diseases - LMIS (dashboard)
 
 ## Installation
 
@@ -87,7 +87,8 @@ contains the UIDs which could be replaced, as well as the API endpoints to ident
 | Object                  | UID           | API endpoint                                                             |
 |-------------------------|---------------|--------------------------------------------------------------------------|
 | Percentage              | `hmSnCXmLYwt` | `../api/indicatorTypes.json?filter=number:eq:false&filter=factor:eq:100` |
-| Numerator only (number) | `CqNPn5KzksS` | `../api/indicatorTypes.json?filter=number:eq:true&filter=factor:eq:1`    |
+| Numerator only (number) | `kHy61PbChXr` | `../api/indicatorTypes.json?filter=number:eq:true&filter=factor:eq:1`    |
+| Rate (factor=1)         | `k4RGC3sMTzO` | `../api/indicatorTypes.json?filter=number:eq:false&filter=factor:eq:1`    |
 
 ### Visualizations using Root Organisation Unit UID
 
@@ -169,9 +170,9 @@ Please refer to the [DHIS2 documentation](#sharing) for more information on shar
 
 Three core user groups are included in the packages:
 
-- NTD - Access (view metadata/view data)
-- NTD - Admin (view and edit metadata/no access to data)
-- NTD - Data Capture - (view metadata/capture and view data)
+- NTD LMIS - Access (view metadata/view data)
+- NTD LMIS - Admin (view and edit metadata/no access to data)
+- NTD LMIS - Data Capture - (view metadata/capture and view data)
 
 The users are assigned to the appropriate user group based on their role within the system. Sharing for other objects in
 the package may be adjusted depending on the set-up. Refer to the [DHIS2 Documentation on sharing](#sharing) for more
